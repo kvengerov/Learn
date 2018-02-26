@@ -5,9 +5,10 @@ function pow2() {
 }
 
 function eqv() {
-	var num1 = document.getElementById('num1').value;
-	var num2 = document.getElementById('num2').value;
-	var res = +num1 + +num2;
+	var num1 = parseInt(document.getElementById('num1').value);
+	var num2 = parseInt(document.getElementById('num2').value);
+	//var res = +num1 + +num2;
+	var res = num1 + num2;
 	document.getElementById('sum1').innerHTML = res;
 
 	//document.getElementById('num3').value = res;
