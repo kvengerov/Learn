@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <title>Track List</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
 </head>
 <body>
-
-
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="items">
+                    <h1 class="title">Track List</h1>
+                    <input type="text" placeholder="Input artist name" id='artistName'>
+                    <input type="submit" id='btn'>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="item-list">
+                    <table id='table' class="stripy"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <script src="js/app.js"></script>
 </body>
 </html>
