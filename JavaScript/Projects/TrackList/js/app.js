@@ -69,7 +69,6 @@ function accordionTable(i,elem) {
 		var table = $(elem);
 		var tbody = table.find('tbody');
 
-		//accordion on tbody > tr
 		tbody.find('tr:first').addClass("table-acc-header");
 		tbody.find('tr:last').addClass("table-acc-body");
 		$(".table-acc-header").click(function() {
