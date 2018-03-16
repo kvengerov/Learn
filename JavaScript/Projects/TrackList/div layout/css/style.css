@@ -1,3 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.table{
+    display: table;
+    width: 100%;
+    height: 250px;
+    /*background: #ccc;*/
+}
+
+.table-item{
+    display: table-cell;
+    vertical-align: top;
+    /*border: 1px solid #000;*/
+}
+.table-item-row{
+    display: table-row;
+}
+
+
+
+
+
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted white;
+}
+
+/*.table {
+	border-spacing: 2px;
+	padding: 0;
+	display: table;
+	background: #d9edf7;
+	border-color: #3a87ad;
+	width: 100%;
+}*/
+
+.row {
+    display: table-row;
+    background: #f2dede;
+    border-color: #b94a48;
+}
+
+.cell {
+    display: table-cell;
+    background: #fbeed5;
+    border-color: #c09853;
+}
+
+.collapse {
+    display: none;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +64,10 @@ body {
 .items {
     text-align: center;
     padding-bottom: 20px;
+}
+
+.items-list {
+    text-align: center;
 }
 
 #artistName {
@@ -22,11 +83,11 @@ body {
 }
 
 #btn {
-    margin-left: -63px;
-    height: 53px;
+    margin-left: -64px;
+    height: 47px;
     background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
     transition: all .218s ease 0s;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 0px solid rgba(0,0,0,.1);
     -webkit-appearance: none;
     font-weight: bold;
     border-radius: 5px;
@@ -40,26 +101,29 @@ body {
     color: grey;
 }
 
-.table {
-    width:100%;
-    font-family:sans-serif;
-    border-collapse:collapse;
-    border:1px solid #d2d2d2;
-}
+/*.table {
+	width:100%;
+	font-family:sans-serif;
+	border-collapse:collapse;
+	border:1px solid #d2d2d2;
+}*/
 
 .table th {
     text-align:center;
-    padding:10px 8px;
+    padding:4px 8px;
     text-transform: uppercase;
-    font-size: 14px;
 }
 
 .table td {
     border-top:1px solid #d2d2d2;
     padding:4px 8px;
-    font-size: 14px;
-    vertical-align: middle;
-    text-align:center;
+}
+
+.table tr:hover th {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .table tr:hover td {
@@ -75,9 +139,9 @@ body {
     background-color: #eef7ff;
 }
 
-/*.collapse {*/
-    /*display:none;*/
-/*}*/
+.collapse {
+    display:none;
+}
 
 span {
     font-weight: bold;
@@ -102,6 +166,3 @@ span {
     width: 350px;
     margin: 2px;
 }
-
-
-
